@@ -1,16 +1,29 @@
 <!doctype html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>操作パネル | リモートプレゼンの味方</title>
     <script src="./index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <div class="container">
+        <h1 class="title is-2">リモートプレゼンのミカタ</h1>
+        <button onclick="sendPrev()" class="prev btn">◀︎</button>
+        <button onclick="sendNext()" class="next btn">▶︎</button>
 
-    <button onclick="sendPrev()">前</button>
-    <button onclick="sendNext()">次</button>
-    <h3>Logs</h3>
-    <div id="log">
+        <section id="logs">
+            <header>
+                <h3 class="title is-4">Logs <button id="expandLogs" onclick="switchLogs()">+</button></h3>
+            </header>
+            <div id="log">
+
+            </div>
+        </section>
 
     </div>
 </body>
