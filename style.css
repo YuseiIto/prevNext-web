@@ -17,7 +17,7 @@ h1 {
     border: none;
     background-color: #f5f5f5;
     transition: 0.3s;
-    color: hsl(141, 53%, 53%);
+    color: #555;
 }
 
 .btn:hover {
@@ -55,4 +55,16 @@ h1 {
 
 #expandLogs:hover {
     opacity: 60%;
+}
+
+.log {
+    padding-right: 0.5em;
+}
+
+.success {
+    color: hsl(141, 53%, 53%);
+}
+
+.error {
+    color: hsl(348, 100%, 61%);
 }
