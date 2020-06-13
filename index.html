@@ -1,13 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>操作パネル | リモートプレゼンの味方</title>
     <script src="./index.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -15,15 +15,27 @@
         <h1 class="title is-4">リモートプレゼンのミカタ</h1>
         <button onclick="sendPrev()" class="prev btn">◀︎</button>
         <button onclick="sendNext()" class="next btn">▶︎</button>
-
-        <section id="logs">
+        <section style="margin: 20px;">
             <header>
-                <h3 class="title is-4">Logs <button id="expandLogs" onclick="switchLogs()">+</button></h3>
+                <h3 class="title is-5">
+                    スペースID
+                </h3>
             </header>
-            <div id="log">
-
-            </div>
+            <section style="margin-top:15px;">
+                <input type="text" id="spaceId" />
+                <button onclick="issueSpaceId()">Issue</button>
+            </section>
         </section>
 
+        <button onclick="setSpaceId()">設定</button>
+        </section>
+        <section id="logs">
+            <header>
+                <h3 class="title is-4">
+                    Logs <button id="expandLogs" onclick="switchLogs()">+</button>
+                </h3>
+            </header>
+            <div id="log"></div>
+        </section>
     </div>
 </body>

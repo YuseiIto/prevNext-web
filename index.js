@@ -5,12 +5,12 @@ let sock = null;
 let reConnection = null; // Interval id
 
 function sendNext() {
-    sock.send("next");
+    sock.send("next#" + spaceId);
     log.innerHTML += "Next<br/>";
 }
 
 function sendPrev() {
-    sock.send("prev");
+    sock.send("prev#" + spaceId);
     log.innerHTML += "Prev<br/>";
 }
 
@@ -36,9 +36,26 @@ function connect() {
     }
 }
 
+function setSpaceId() {
+    spaceId = document.getElementById("spaceId").value;
+    log.innerHTML +=
+        '<span class="log success">[成功]</span>スペースIDが<code>' +
+        spaceId +
+        "</code>に設定されました。<br/>";
+}
+
+function issueSpaceId() {
+    const sid = String(Math.floor(Math.random() * 9999)).padStart(4);
+    document.getElementById("spaceId").value = sid;
+    setSpaceId();
+    return sid;
+}
+
 window.onload = function() {
     log = document.getElementById("log");
     logBtn = document.getElementById("expandLogs");
+
+    issueSpaceId();
 
     connect();
 
