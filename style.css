@@ -22,7 +22,7 @@ h1 {
 
 .btn:hover {
     opacity: 60%;
-    border: 2px #555 solid
+    border: 2px #555 solid;
 }
 
 #logs {
@@ -69,4 +69,11 @@ h1 {
 
 .error {
     color: hsl(348, 100%, 61%);
+}
+
+
+/* Do not zoom when double tapped */
+
+html {
+    touch-action: manipulation;
 }
