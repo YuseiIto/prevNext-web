@@ -1,6 +1,6 @@
 let log = null;
 let logBtn = null;
-const path = "wss://server.nextprev.yuseiito.com/";
+const path = "wss://server.prevnext.yuseiito.com/";
 let sock = null;
 let reConnection = null; // Interval id
 
