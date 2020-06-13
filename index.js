@@ -47,4 +47,14 @@ window.onload = function() {
             e.style.color = "hsl(141, 53%, 53%)";
         }
     });
+
+
+    sock.addEventListener('close', function(e) {
+        console.log('Socket disconnected.');
+        log.innerHTML += '<span class="log error">[エラー]</span>接続が切断されました<br/>';
+        const elements = document.getElementsByClassName('btn');
+        for (const e of elements) {
+            e.style.color = "#555";
+        }
+    });
 }
