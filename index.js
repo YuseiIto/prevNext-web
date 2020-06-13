@@ -1,6 +1,6 @@
 let log = null;
 let logBtn = null;
-const path = 'ws://server.nextprev.yuseiito.com/'
+const path = 'wss://server.nextprev.yuseiito.com/'
 let sock = null;
 
 
