@@ -40,6 +40,7 @@ h1 {
     margin-right: auto;
     margin-left: auto;
     overflow-y: scroll;
+    display: none;
 }
 
 #expandLogs {
@@ -60,7 +61,6 @@ h1 {
 
 .log {
     padding-right: 0.5em;
-    display: none;
 }
 
 .success {
