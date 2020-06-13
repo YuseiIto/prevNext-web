@@ -9,11 +9,11 @@ h1 {
 }
 
 .btn {
-    width: 45%;
-    height: 40vh;
+    width: 100px;
+    height: 100px;
     margin: 10px;
     border-radius: 10px;
-    font-size: 30vh;
+    font-size: 80px;
     border: none;
     background-color: #f5f5f5;
     transition: 0.3s;
