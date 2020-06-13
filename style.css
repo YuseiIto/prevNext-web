@@ -60,6 +60,7 @@ h1 {
 
 .log {
     padding-right: 0.5em;
+    display: none;
 }
 
 .success {
