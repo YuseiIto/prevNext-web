@@ -77,7 +77,11 @@ window.onload = function () {
   issueSpaceId();
 
   const query = getUrlQueries();
-  spaceId = query.spaceId;
+  if (query.spaceId) {
+    document.getElementById("spaceId").value = query.spaceId;
+    setSpaceId();
+  }
+
   connect();
 
   sock.addEventListener("open", function (e) {
